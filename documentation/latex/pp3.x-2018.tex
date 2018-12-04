@@ -1,22 +1,26 @@
-\documentclass{article}
+\documentclass[12pt, a4paper]{article}
 
-\title{Title of my document}
-\date{2013-09-01}
-\author{John Doe}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=red,
+    linktoc=all
+}
 
 \begin{document}
 
-\maketitle
-\pagenumbering{gobble}
+\tableofcontents
 \newpage
-\pagenumbering{arabic}
 
-\section{Section}
+\section{First Section}
+\subsection{First part of the first section}
+Source code for this can be found at \url{http://timmurphy.org/2014/03/11/latex-table-of-contents-with-clickable-links}
+\subsection{Second part of the first section}
+\ldots
 
-Hello World!
-
-\subsection{Subsection}
-
-Structuring a document is easy!
-
+\section{Second Section}
+\subsection{First part of the second section}
+\ldots
 \end{document}
